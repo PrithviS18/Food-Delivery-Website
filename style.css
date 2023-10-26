@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION BAR */
+
+/* We can insert the background of the navbar by using this method also */
+ #navbar::before{
+    content:"";
+    background-color: black;
+    Position according to search Bar
+    top: 0px;
+    left: 0px;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.5; */
+} 
+
+/* Navigation Bar Starts */
+#navbar{
+    display: flex;
+    /* We Change Postion of Navbar to relative to make the navbar::before fit within the navbar */
+    position: relative;
+    /* Aligns items vertically */
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo */
+#logo{
+
+}
+/* Logo image*/
+#logo img{
+    width: 100px;
+    height: 85px;
+    margin: 0px 40px;
+    padding: 5px 0px;
+ } 
+/* Logo unordered list */
+#navbar ul{
+    display: flex;
+}
+/* Unordered List Items */
+#navbar ul li{
+    list-style: none;
+    margin: 0px 30px;
+}
+/* Items within list items */
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* border: 2px solid red; */
+    padding: 10px 20px;
+}
+/* Hover over the items */
+#navbar ul li a:hover{
+    background-color: aqua;
+    color: black;
+    border-radius: 10px;
+}
+/* NAVIGATION BAR ENDS */
+
+
+/* Utility Classes */
+.Home1{
+    font-size: 3rem;
+}
+.Home2{
+    font size: 2rem;
+}
+
+
+/* HOME SECTION STARTS */
+/* To insert the background image of this section */
+#Home::before{
+    content:"";
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Position according to search Bar */
+    top: 0px;
+    left: 0px;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+}
+
+#Home{
+    /* Container Definition */
+    height: 35vw;
+    /* Text Definition */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border: 2px solid red;
+    color: black;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#Home h1{
+    padding: 2rem 0rem;
+}
+.btn{
+    background-color: rgb(231, 231, 224);
+    color: black;
+
+    width: 12rem;
+    height: 3rem;
+    margin: 3rem 0rem;
+    padding: 0rem 1rem;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: large;
+}
+
+.btn:hover{
+    background-color: rgb(213, 111, 193);
+    color: black;
+    cursor: pointer;
+}
+/* Home Section Ends */
+
+
+/* Services Section Starts */
+
+#Services{
+    display: flex;
+    flex-direction: column;
+    height: 35vw;
+    position: relative;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* border: 2px solid red; */
+}
+#Services h1{
+    padding: 2rem 0rem;
+}
+#Cards{
+    display: flex;
+    margin: 5rem 0rem;
+}
+.items{
+    /* Making this flexbox */
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 20px;
+    border: 2px solid red;
+
+    margin: 0rem 2rem;
+    padding: 1rem;
+    height: 35vh;
+
+    background-color: rgb(232, 214, 192);
+    align-items: center;
+}
+.items:hover{
+    background-color: rgb(132, 132, 219);
+    cursor: pointer;
+}
+.items img{
+    width: 150px;
+    height: 130px;
+}
+/* Services Section Ends */
+
+
+/* Partners Section Starts */
+#Partners::before{
+    content:"";
+    background-image: url(bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Position according to search Bar */
+    top: 0px;
+    left: 0px;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#Partners{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    height: 35vw;
+    position: relative;
+    align-items: center;
+}
+#Partners h1{
+    padding: 2rem 0rem;
+}
+#Partner{
+    display: flex;
+}
+.items2{
+    padding: 4rem;
+}
+.items2 img{
+    width: 15vw;
+    height: 25vh;
+}
+
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: black;
+    padding: 5px 0px;
+    color: white;
+}
